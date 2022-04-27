@@ -1,0 +1,35 @@
+name: yueya
+description: 悦雅苑，集小说，漫画，听书于一体
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  dio: ^4.0.6 # http请求工具
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.4.0 # 屏幕适配工具
+  flutter_svg: ^1.0.3 # 读取svg文件
+  shared_preferences: ^2.0.13 # 持久化存储(Storage)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true #就是允许使用material的默认资源
+  assets:
+    - res/assets/svg/
+    - res/assets/images/
+  fonts:
+    - family: MyIcons
+      fonts:
+        - asset: res/fonts/MyIcons.ttf
+#  fonts:
+#    - family: 自定义字体名称
+#      fonts:
+#        - asset: res/fonts
